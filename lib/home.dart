@@ -30,8 +30,19 @@ class _HomePageState extends State<HomePage> {
               MaterialPageRoute(
                   builder: (context) => FoodDetailPage(
                     foodName: item['name'],
+                    foodPrice: item['price'],
+                    foodImage: item['image']
 
                   )
+              ),
+            ),
+            child: Card(
+              child: Column(
+                children: [
+                  Image.asset(item['image']),
+                  Text(item['name']),
+                  Text(item['price']),
+                ],
               ),
             ),
           );
