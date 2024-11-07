@@ -14,6 +14,7 @@ class FoodApp extends StatelessWidget{
         primarySwatch: Colors.red,
       ),
       home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

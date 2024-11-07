@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Image.asset(item['image']),
                   Text(item['name']),
-                  Text(item['price']),
+                  Text('\$${item['price']}'),
                 ],
               ),
             ),
